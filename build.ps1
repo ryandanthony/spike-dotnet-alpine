@@ -4,5 +4,5 @@ Push-Location ./src/test
     docker build -t "test:latest" .
 
 Pop-Location
-docker run -p 8080:80 test:latest 
-curl -v http://localhost:8080/weatherforecast
+docker run -p 8080:80 test:latest
+#curl -v http://localhost:8080/weatherforecast
