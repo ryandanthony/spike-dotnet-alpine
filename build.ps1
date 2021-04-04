@@ -1,4 +1,4 @@
-#1/usr/bin/env pwsh
+#!/usr/bin/env pwsh
 Push-Location ./src/test
     dotnet publish -c Release -f netcoreapp3.1 -r linux-musl-x64 -o out
     docker build -t "test:latest" .
